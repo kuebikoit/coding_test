@@ -4,6 +4,9 @@
 # Log file
 *.log
 
+# Maven generated
+*/target/*
+
 # Intellij
 .idea
 
