@@ -8,7 +8,7 @@ public class Task7 {
                 max= j;
             }
         }
-        
+
         return max;
     }
 
