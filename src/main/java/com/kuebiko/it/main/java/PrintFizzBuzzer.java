@@ -11,7 +11,7 @@ public class PrintFizzBuzzer {
     }
     public  String print(Integer input) {
         if(input==0){
-            return "" +input.toString();
+            return " " +input.toString();
         }
         if (input % 3 == 0 & input % 5 == 0) {
            // return  "FizzBuzz";
@@ -23,7 +23,7 @@ public class PrintFizzBuzzer {
             return "Buzz";
           //  System.out.println("Buzz \n");
         } else {
-            return "" + input;
+            return " " + input;
           //  System.out.println(input);
         }
         return " ";

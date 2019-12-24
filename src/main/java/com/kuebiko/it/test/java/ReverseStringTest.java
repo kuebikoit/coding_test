@@ -11,7 +11,7 @@ public class ReverseStringTest {
         String str="Yubaraj16213!#$%^&";
         String expected= reverseString.Reverse(str);
         System.out.println(expected);
-        String actual="&^%$#!31261jarabuY";
+        String actual=" &^%$#!31261jarabuY";
 
         Assert.assertEquals(actual,expected);
     }
