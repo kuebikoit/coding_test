@@ -1,4 +1,4 @@
-package com.cubic.test1;
+package com.kuebiko.it;
 
 import java.util.ArrayList;
 import java.util.List;
