@@ -16,6 +16,7 @@ public class Example {
                 if (element_j < element_i) {
                     copy[i] = element_j;
                     copy[j] = element_i;
+                    
                     element_i = element_j;
                 }
             }
