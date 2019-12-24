@@ -1,4 +1,4 @@
-import com.cubic.test1.Test1;
+package com.kuebiko.it;
 import org.junit.*;
 
 import java.util.Arrays;
