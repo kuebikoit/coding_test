@@ -1,4 +1,4 @@
-package com.kuebiko.it;
+package coding_test.src.main.java.com.kuebiko.it;
 
 public class Example {
 

@@ -1,4 +1,4 @@
-package com.kuebiko.it;
+package coding_test.src.test.java.com.kuebiko.it;
 
 import org.junit.Assert;
 import org.junit.Test;
