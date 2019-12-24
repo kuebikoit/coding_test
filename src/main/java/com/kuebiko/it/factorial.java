@@ -6,6 +6,7 @@ public class factorial {
         System.out.println ("Please enter desired integer input:::");
        int input=in.nextInt();
        int result = 1;
+       
        while(input>0){
             result *= input;
             input--;
