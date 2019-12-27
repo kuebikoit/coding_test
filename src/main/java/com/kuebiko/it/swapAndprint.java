@@ -1,17 +1,16 @@
+package com.kuebiko.it;
 
 public class swapAndprint {
-     public static void swapAndPrint(int a,int b){
+     public static String swapPrint(int a,int b){
+
         int temp=a;
         a=b;
         b = temp;
-        System.out.println ("a="+ a + "b="+b);
+      return (String.valueOf(a)+ ","+ String.valueOf (b));
     }
     public static void main(String[] args) {
         int a=3;
         int b=5;
-        swapAndPrint(a,b);
-
-
-
+        System.out.println("Resultsssss==="+swapPrint(a,b));
     }
 }
