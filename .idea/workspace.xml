@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5f38d26-228a-4c57-b8b1-d0361bf5a9f1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="coding_test" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit3 Test Class" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="NawarajTest" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VRQ9rFLhJhIR0iFt8WRg216oXE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.kuebiko.it" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="junit.framework.TestCase" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Demohash">
+    <configuration name="Demohash (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it" />
+      <module name="coding_test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demohash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.Demohash" />
+      <module name="coding_test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="duplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.duplicates" />
+      <module name="coding_test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sumTest.getSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coding_test" />
+      <option name="PACKAGE_NAME" value="com.kuebiko.it" />
+      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.sumTest" />
+      <option name="METHOD_NAME" value="getSum" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="swapAndprintTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coding_test" />
+      <option name="PACKAGE_NAME" value="com.kuebiko.it" />
+      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.swapAndprintTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Demohash" />
+      <item itemvalue="Application.Demohash (1)" />
+      <item itemvalue="Application.duplicates" />
+      <item itemvalue="JUnit.sumTest.getSum" />
+      <item itemvalue="JUnit.swapAndprintTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demohash" />
+        <item itemvalue="Application.Demohash (1)" />
+        <item itemvalue="Application.duplicates" />
+        <item itemvalue="JUnit.swapAndprintTest" />
+        <item itemvalue="JUnit.sumTest.getSum" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added unit test and class assignment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unit test and class assignment." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="316" y="65" key="#Demohash" timestamp="1577428127037">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="316" y="65" key="#Demohash/0.0.1280.800@0.0.1280.800" timestamp="1577428127037" />
+    <state x="308" y="130" key="#Demohash_(1)" timestamp="1577428328818">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="308" y="130" key="#Demohash_(1)/0.0.1280.800@0.0.1280.800" timestamp="1577428328818" />
+    <state x="240" y="65" key="#Plugins" timestamp="1577213293446">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="65" key="#Plugins/0.0.1280.800@0.0.1280.800" timestamp="1577213293446" />
+    <state x="0" y="0" width="1280" height="800" key="#Project_Structure" timestamp="1577428060953">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="0" y="0" width="1280" height="800" key="#Project_Structure/0.0.1280.800@0.0.1280.800" timestamp="1577428060953" />
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577427033684">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1577427033684" />
+    <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577216591959">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1577216591958" />
+    <state x="409" y="115" key="#duplicates" timestamp="1577428302504">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="409" y="115" key="#duplicates/0.0.1280.800@0.0.1280.800" timestamp="1577428302504" />
+    <state x="264" y="1" key="CommitChangelistDialog2" timestamp="1577425608926">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="264" y="1" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1577425608926" />
+    <state x="488" y="222" key="EnvironmentVariablesDialog" timestamp="1577428292814">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="488" y="222" key="EnvironmentVariablesDialog/0.0.1280.800@0.0.1280.800" timestamp="1577428292814" />
+    <state width="619" height="212" key="GridCell.Tab.0.bottom" timestamp="1577428699365">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="619" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1577428699365" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1577382748376" />
+    <state width="619" height="212" key="GridCell.Tab.0.center" timestamp="1577428699364">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="619" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1577428699364" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1577382748368" />
+    <state width="619" height="212" key="GridCell.Tab.0.left" timestamp="1577428699363">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="619" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1577428699363" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1577382748364" />
+    <state width="619" height="212" key="GridCell.Tab.0.right" timestamp="1577428699365">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="619" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1577428699365" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1577382748374" />
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1577424762379">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1577424762379" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1577424762378">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1577424762378" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1577424762378">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1577424762378" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1577424762379">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1577424762379" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1577425635459">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1577425635459" />
+    <state x="405" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577424599621">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="405" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1577424599621" />
+    <state x="378" y="160" key="extract.method.dialog" timestamp="1577423313843">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="378" y="160" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1577423313843" />
+    <state x="327" y="198" key="git4idea.merge.GitPullDialog" timestamp="1577426277364">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="327" y="198" key="git4idea.merge.GitPullDialog/0.0.1280.800@0.0.1280.800" timestamp="1577426277364" />
+    <state x="449" y="301" key="git4idea.ui.GitResetDialog" timestamp="1577427407036">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="449" y="301" key="git4idea.ui.GitResetDialog/0.0.1280.800@0.0.1280.800" timestamp="1577427407036" />
+    <state x="399" y="239" key="git4idea.ui.GitUnstashDialog" timestamp="1577427170834">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="399" y="239" key="git4idea.ui.GitUnstashDialog/0.0.1280.800@0.0.1280.800" timestamp="1577427170834" />
+    <state x="346" y="23" key="refactoring.ChangeSignatureDialog" timestamp="1577422177624">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="346" y="23" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1577422177624" />
+  </component>
+</project>
