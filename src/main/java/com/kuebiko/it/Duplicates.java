@@ -2,7 +2,7 @@ package com.kuebiko.it;
 
 import java.util.ArrayList;
 
-public class duplicates {
+public class Duplicates {
 public static ArrayList<String> duplicate (String[]arr){
     ArrayList<String> duplicates = new ArrayList<>();
 
@@ -22,8 +22,6 @@ public static ArrayList<String> duplicate (String[]arr){
 
 }
     public static void main(String[] args) {
-
-
 
         String[] arr= {"one","two","four","four","one","four"};
        ArrayList<String> res= duplicate(arr);

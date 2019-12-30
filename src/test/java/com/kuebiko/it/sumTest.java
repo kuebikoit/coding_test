@@ -2,7 +2,6 @@ package com.kuebiko.it;
 
 import org.junit.Test;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +16,7 @@ public class sumTest {
         numbers.add(1);
         numbers.add(2);
         numbers.add(4);
-        int actual=sum.getSum (numbers);
+        int actual= Sum.getSum (numbers);
         assertEquals (expected,actual);
 
 

@@ -5,7 +5,7 @@ import java.util.Hashtable;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Demohash {
+public class DemoHash {
     public static void check(HashMap<Integer, String> hmap, int key, String value) {
         if (hmap.containsKey (key)) {
             if (hmap.get (key).equals (value)) {

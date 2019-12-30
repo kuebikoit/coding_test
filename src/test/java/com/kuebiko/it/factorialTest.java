@@ -9,7 +9,7 @@ public class factorialTest {
     @Test
     public void testFact() {
         int expected=24;
-        int actual = factorial.fact (4);
+        int actual = Factorial.fact (4);
         assertEquals (expected,actual);
 
 

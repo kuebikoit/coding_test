@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5f38d26-228a-4c57-b8b1-d0361bf5a9f1" name="Default Changelist" comment="" />
+    <list default="true" id="b5f38d26-228a-4c57-b8b1-d0361bf5a9f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/Palindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/PalindromeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/Demohash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/DemoHash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/duplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/Duplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/Factorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/max.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/Max.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/printFuzzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/PrintFuzzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/Sum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/swapAndprint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kuebiko/it/SwapAndPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/duplicatesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/duplicatesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/factorialTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/factorialTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/maxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/maxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/printFuzzBuzzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/printFuzzBuzzTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/sumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/sumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/swapAndprintTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kuebiko/it/swapAndPrintTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,14 +74,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
@@ -71,63 +97,60 @@
       <recent name="junit.framework.TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Demohash">
-    <configuration name="Demohash (1)" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it" />
+  <component name="RunManager" selected="Application.Factorial">
+    <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.Factorial" />
       <module name="coding_test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demohash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.Demohash" />
+    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.Palindrome" />
       <module name="coding_test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="duplicates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.duplicates" />
+    <configuration name="PalindromeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.PalindromeDemo" />
       <module name="coding_test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sumTest.getSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PalindromeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="coding_test" />
       <option name="PACKAGE_NAME" value="com.kuebiko.it" />
-      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.sumTest" />
-      <option name="METHOD_NAME" value="getSum" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.PalindromeTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="swapAndprintTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="maxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="coding_test" />
       <option name="PACKAGE_NAME" value="com.kuebiko.it" />
-      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.swapAndprintTest" />
+      <option name="MAIN_CLASS_NAME" value="com.kuebiko.it.maxTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Demohash" />
-      <item itemvalue="Application.Demohash (1)" />
-      <item itemvalue="Application.duplicates" />
-      <item itemvalue="JUnit.sumTest.getSum" />
-      <item itemvalue="JUnit.swapAndprintTest" />
+      <item itemvalue="Application.PalindromeDemo" />
+      <item itemvalue="Application.Palindrome" />
+      <item itemvalue="JUnit.maxTest" />
+      <item itemvalue="JUnit.PalindromeTest" />
+      <item itemvalue="Application.Factorial" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Demohash" />
-        <item itemvalue="Application.Demohash (1)" />
-        <item itemvalue="Application.duplicates" />
-        <item itemvalue="JUnit.swapAndprintTest" />
-        <item itemvalue="JUnit.sumTest.getSum" />
+        <item itemvalue="Application.Factorial" />
+        <item itemvalue="JUnit.PalindromeTest" />
+        <item itemvalue="Application.Palindrome" />
+        <item itemvalue="JUnit.maxTest" />
+        <item itemvalue="Application.PalindromeDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +181,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added unit test and class assignment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added unit test and class assignment." />
+    <MESSAGE value="Added coding_test.iml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added coding_test.iml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="316" y="65" key="#Demohash" timestamp="1577428127037">
@@ -169,18 +193,26 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="308" y="130" key="#Demohash_(1)/0.0.1280.800@0.0.1280.800" timestamp="1577428328818" />
+    <state x="240" y="65" key="#Java" timestamp="1577459246911">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="65" key="#Java/0.0.1280.800@0.0.1280.800" timestamp="1577459246911" />
     <state x="240" y="65" key="#Plugins" timestamp="1577213293446">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="240" y="65" key="#Plugins/0.0.1280.800@0.0.1280.800" timestamp="1577213293446" />
-    <state x="0" y="0" width="1280" height="800" key="#Project_Structure" timestamp="1577428060953">
+    <state x="0" y="0" width="1280" height="800" key="#Project_Structure" timestamp="1577429442484">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="0" y="0" width="1280" height="800" key="#Project_Structure/0.0.1280.800@0.0.1280.800" timestamp="1577428060953" />
+    <state x="0" y="0" width="1280" height="800" key="#Project_Structure/0.0.1280.800@0.0.1280.800" timestamp="1577429442484" />
     <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577427033684">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1577427033684" />
+    <state x="402" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577725771231">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="402" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1577725771231" />
     <state x="378" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577216591959">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -189,33 +221,33 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="409" y="115" key="#duplicates/0.0.1280.800@0.0.1280.800" timestamp="1577428302504" />
-    <state x="264" y="1" key="CommitChangelistDialog2" timestamp="1577425608926">
+    <state x="264" y="1" key="CommitChangelistDialog2" timestamp="1577429648030">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="264" y="1" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1577425608926" />
+    <state x="264" y="1" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1577429648030" />
     <state x="488" y="222" key="EnvironmentVariablesDialog" timestamp="1577428292814">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="488" y="222" key="EnvironmentVariablesDialog/0.0.1280.800@0.0.1280.800" timestamp="1577428292814" />
-    <state width="619" height="212" key="GridCell.Tab.0.bottom" timestamp="1577428699365">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1577725945530">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="619" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1577428699365" />
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1577725945530" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.23.1280.709@0.23.1280.709" timestamp="1577382748376" />
-    <state width="619" height="212" key="GridCell.Tab.0.center" timestamp="1577428699364">
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1577725945529">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="619" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1577428699364" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1577725945529" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.23.1280.709@0.23.1280.709" timestamp="1577382748368" />
-    <state width="619" height="212" key="GridCell.Tab.0.left" timestamp="1577428699363">
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1577725945529">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="619" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1577428699363" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1577725945529" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.23.1280.709@0.23.1280.709" timestamp="1577382748364" />
-    <state width="619" height="212" key="GridCell.Tab.0.right" timestamp="1577428699365">
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1577725945530">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="619" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1577428699365" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1577725945530" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.23.1280.709@0.23.1280.709" timestamp="1577382748374" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1577424762379">
       <screen x="0" y="0" width="1280" height="800" />
@@ -233,18 +265,22 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1577424762379" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1577425635459">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1577429663874">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1577425635459" />
-    <state x="405" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577424599621">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1577429663874" />
+    <state x="405" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577725419616">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="405" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1577424599621" />
+    <state x="405" y="149" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.800@0.0.1280.800" timestamp="1577725419616" />
     <state x="378" y="160" key="extract.method.dialog" timestamp="1577423313843">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="160" key="extract.method.dialog/0.0.1280.800@0.0.1280.800" timestamp="1577423313843" />
+    <state x="221" y="125" width="837" height="550" key="find.popup" timestamp="1577725464823">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="221" y="125" width="837" height="550" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1577725464823" />
     <state x="327" y="198" key="git4idea.merge.GitPullDialog" timestamp="1577426277364">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

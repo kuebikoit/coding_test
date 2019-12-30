@@ -1,6 +1,6 @@
 package com.kuebiko.it;
 
-public class max {
+public class Max {
    public static int max(int[] arr){
        int i=0;
        int max = arr[0];

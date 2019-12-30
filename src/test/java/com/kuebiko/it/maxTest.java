@@ -10,7 +10,7 @@ public class maxTest {
     public void max() {
         int expected=9;
         int[] actual = {1,2,3,4,5,6,7,8,9};
-        int result=max.max(actual);
+        int result= Max.max(actual);
         assertEquals (expected,result);
         System.out.println ("the test is pass");
     }

@@ -1,0 +1,14 @@
+
+2squid:S1643"Use a StringBuilder instead.(Íä_
+Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(Íıçıÿÿÿÿ
+squid:UselessImportCheck"VRemove this unused import 'com.sun.org.apache.xpath.internal.objects.XStringForChars'.(şÇ—éúÿÿÿÿ
+wsquid:UselessImportCheck"NRemove this unused import 'com.sun.org.apache.xpath.internal.objects.XString'.(Íıçıÿÿÿÿ
+fsquid:S00100	"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïæ¥¿
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ˆ¤ïşÿÿÿÿ
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(¦éÕĞøÿÿÿÿ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(œ¿á÷
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(æÂæã

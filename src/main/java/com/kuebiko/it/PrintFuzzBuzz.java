@@ -2,7 +2,7 @@ package com.kuebiko.it;
 
 import java.util.Scanner;
 
-public class printFuzzBuzz {
+public class PrintFuzzBuzz {
     public static String fuzz(int input){
         String out="";
         if(input%3==0 && input%5==0){

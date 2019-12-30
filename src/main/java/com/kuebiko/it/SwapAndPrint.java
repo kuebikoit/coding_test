@@ -1,6 +1,6 @@
 package com.kuebiko.it;
 
-public class swapAndprint {
+public class SwapAndPrint {
      public static String swapPrint(int a,int b){
 
         int temp=a;
