@@ -14,11 +14,13 @@ package com.kuebiko.it;
 public class NextPerfectSquare {
 
   public int getNextPerfectSquare(int num) {
+
     if (isNumberPerfect(num)) {
 
-      while (!isNumberPerfect(++num)) {
+      do {
+        num++;
+      } while (!isNumberPerfect(num));
 
-      }
       return num;
     }
 

@@ -6,7 +6,7 @@ import org.junit.Test;
 public class NextPerfectSquareTest {
 
   @Test
-  public void getNextPerfectSquare() {
+  public void whenNumberIsPerfect_thenGetNextPerfectSquare() {
     //AAA -> Arrange Act Assert
     NextPerfectSquare inst = new NextPerfectSquare();
 
@@ -16,7 +16,7 @@ public class NextPerfectSquareTest {
   }
 
   @Test
-  public void getNextPerfectSquare_checkNegative() {
+  public void whenNumberIsNotPerfect_thenNegativeNumber() {
     NextPerfectSquare inst = new NextPerfectSquare();
 
     int number = inst.getNextPerfectSquare(15);
