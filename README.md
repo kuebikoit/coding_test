@@ -1,4 +1,4 @@
-# Coding Test 12/23/2019
+# Coding Test 03/13/2020
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine.
@@ -13,7 +13,7 @@ IDE (Intellij/Eclipse)
 
 ### Project set up
 ```
-git clone <project>
+git clone <repository>
 git checkout test
 Import project in IDE of your choice
 Run mvn clean install
