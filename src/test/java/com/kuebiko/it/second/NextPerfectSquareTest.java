@@ -1,4 +1,4 @@
-package com.kuebiko.it;
+package com.kuebiko.it.second;
 
 import org.junit.Assert;
 import org.junit.Test;
