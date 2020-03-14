@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package com.kuebiko.it.bidur;
 
 /**
  * Given a positive integer "num" and number "limit"

@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package com.kuebiko.it.bidur;
 
 /**
  * Given array of positive integers find total number of matching pairs.

@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package com.kuebiko.it.bidur;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
