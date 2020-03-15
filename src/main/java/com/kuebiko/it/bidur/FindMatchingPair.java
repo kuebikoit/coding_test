@@ -11,7 +11,23 @@ package com.kuebiko.it.bidur;
 public class FindMatchingPair {
 
   public int totalMatchingPair(int[] arr) {
-    return 0;
+    int no_of_pair=0;
+    int temp;
+    for (int i=0; i<arr.length; i++)
+    {
+      temp=arr[i];
+      if (temp!= 0) {
+        for (int j = i + 1; j < arr.length; j++) {
+          if (arr[j] == temp)
+          {
+            no_of_pair++;
+            arr[j]=0;
+            break;
+          }
+        }
+      }
+    }
+    return no_of_pair;
   }
 
 }

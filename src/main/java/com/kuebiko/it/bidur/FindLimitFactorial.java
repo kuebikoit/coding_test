@@ -12,7 +12,11 @@ package com.kuebiko.it.bidur;
 public class FindLimitFactorial {
 
   public long findLimitFactorial(int num, int limit) {
-    return 0l;
+    long result= num;
+    for(int i=1; i<limit;i++){
+      result =result* (num-i);
+    }
+    return result;
   }
 
 }
