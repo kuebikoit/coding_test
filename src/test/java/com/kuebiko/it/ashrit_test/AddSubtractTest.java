@@ -12,7 +12,7 @@ public class AddSubtractTest {
     public void addSubtract_test() {
 
         int arr[]={5, 4, 2, 1, 3};
-        String s = "SSS";
+        String s = "ASA";
         AddSubtract a = new AddSubtract();
         int k=a.addSubtract(arr,s);
         Assert.assertEquals(8,k);

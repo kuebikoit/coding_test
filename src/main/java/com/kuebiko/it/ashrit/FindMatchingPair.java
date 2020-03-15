@@ -30,20 +30,18 @@ public class FindMatchingPair {
 
    for(int i =0 ; i<arr.length;i++){
      countElement=0;
-    // int temp=arr[i];
-     for(int j=i+1;j<arr.length;j++){
+     for(int j=i;j<arr.length;j++){
        if(arr[i]==arr[j]){
          countElement++;
-         System.out.println("Count element of "+ arr[j]+" is "+countElement);
+         if(j==arr.length-1)
+           i=j;
        }
        else {
-        // element = arr[j];
          i=j-1;
          break;
        }
      }
      countPair+=countElement/2;
-     System.out.println("Total pair = "+countPair);
    }
 return countPair;
   }

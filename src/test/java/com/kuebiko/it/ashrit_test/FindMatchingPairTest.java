@@ -14,7 +14,7 @@ public class FindMatchingPairTest {
         FindMatchingPair f = new FindMatchingPair();
         int a =f.totalMatchingPair(arr);
 
-        Assert.assertEquals(2,a);
+        Assert.assertEquals(1,a);
 
     }
 
@@ -24,14 +24,13 @@ public class FindMatchingPairTest {
         FindMatchingPair f = new FindMatchingPair();
         int a =f.totalMatchingPair(arr);
 
-
         Assert.assertEquals(5,a);
 
     }
 
     @Test
     public void totalMatchingPair2() {
-        int []arr= {5,5,5};
+        int []arr= {5,5,5,6};
         FindMatchingPair f = new FindMatchingPair();
         int a =f.totalMatchingPair(arr);
 
