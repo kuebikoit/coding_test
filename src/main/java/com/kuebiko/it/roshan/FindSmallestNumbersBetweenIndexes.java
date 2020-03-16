@@ -13,6 +13,31 @@ package com.kuebiko.it.roshan;
 public class FindSmallestNumbersBetweenIndexes {
 
   public int smallestNumberInBetween(int[] arr, int[] indexes) {
-    return 0;
+    int lowIndex=indexes[0];
+    int highIndex=indexes[1];
+    int emparrSize=highIndex-lowIndex+1;
+    int emparr[]=new int[emparrSize];
+    int indexCounter=0;
+    int counter;
+    /*find the numbers inbetween */
+    for(int j=lowIndex;j<highIndex+1;j++){
+      emparr[indexCounter]=arr[j];
+      indexCounter++;
+    }
+
+
+    /* put the list in ascending order */
+    for(int i=0;i<emparr.length;i++){
+
+      for(int j=0;j<emparr.length;j++){
+        if(emparr[i]<emparr[j]){
+          counter=emparr[i];
+          emparr[i]=emparr[j];
+          emparr[j]=counter;
+        }
+      }
+    }
+
+    return emparr[0];
   }
 }

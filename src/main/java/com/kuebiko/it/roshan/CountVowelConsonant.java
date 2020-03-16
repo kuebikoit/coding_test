@@ -10,7 +10,26 @@ package com.kuebiko.it.roshan;
 public class CountVowelConsonant {
 
   public int[] countVowelConsonant(String input) {
-    return null;
+
+    char []vowel = new char[]{'a','e','i','o','u'};
+    int size=input.length();
+    int vowelCounter=0;
+    int consonantCounter=0;
+    String lcaseInput=input.toLowerCase();
+
+        for(int i=0;i<size;i++){
+            for(int j=0; j<=4;j++) {
+
+                if (lcaseInput.charAt(i)==vowel[j] ){
+                      vowelCounter++;
+                }
+
+            }
+        }
+
+    consonantCounter=size-vowelCounter;
+
+    return new int[]{vowelCounter,consonantCounter};
   }
 
 }

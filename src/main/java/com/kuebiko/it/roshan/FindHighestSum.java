@@ -11,6 +11,26 @@ package com.kuebiko.it.roshan;
 public class FindHighestSum {
 
   public int findHighestSum(int[] arr, int num) {
-    return 0;
+
+        int size= arr.length;
+        int sum=0;
+        int container=0;
+
+          for(int i=0;i<size;i++){
+              for(int j=0;j<size;j++){
+
+                  if (arr[i]>=arr[j]){
+                        container=arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=container;
+                        }
+                    }
+                 }
+
+          for(int k=0; k<num;k++){
+
+              sum=sum+arr[k];
+          }
+          return sum;
   }
 }

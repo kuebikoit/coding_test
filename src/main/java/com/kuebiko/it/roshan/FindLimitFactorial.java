@@ -12,7 +12,15 @@ package com.kuebiko.it.roshan;
 public class FindLimitFactorial {
 
   public long findLimitFactorial(int num, int limit) {
-    return 0l;
+
+        int mulStore=1;
+        for(int i=limit;i>0;i--){
+              mulStore=mulStore*(num);
+              num--;
+        }
+
+
+    return mulStore;
   }
 
 }
