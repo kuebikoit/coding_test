@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package Saransh.Rana;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -16,6 +16,8 @@ import java.util.Map;
 public class RemoveDuplicateCharacters {
 
   public static String remove(String str) {
+
+
     return null;
   }
 }

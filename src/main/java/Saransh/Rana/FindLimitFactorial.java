@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package Saransh.Rana;
 
 /**
  * Given a positive integer "num" and number "limit"
@@ -12,7 +12,15 @@ package com.kuebiko.it.second;
 public class FindLimitFactorial {
 
   public long findLimitFactorial(int num, int limit) {
-    return 0l;
+
+    int factorial =0;
+
+    for (int i =0; i<limit; i++){
+       factorial = num *(num-1);
+    }
+
+
+    return factorial;
   }
 
 }

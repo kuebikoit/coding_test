@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package Saransh.Rana;
 
 /**
  * Given array "arr" and string "str" that contains "A" for add and "S" for subtract
@@ -10,6 +10,22 @@ package com.kuebiko.it.second;
 public class AddSubtract {
 
   public int addSubtract(int[] arr, String str) {
-    return 0;
+
+    int total = arr[0];
+
+    for (int i = 0; i < str.length(); i++) {
+
+      if (str.charAt(i) == 'A') {
+
+        total = total + arr[i + 1];
+      }
+      else if (str.charAt(i) == 'S') {
+        total = total - arr[i + 1];
+
+      }
+    }
+    return total;
   }
 }
+
+

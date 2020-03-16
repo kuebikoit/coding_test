@@ -1,4 +1,6 @@
-package com.kuebiko.it.second;
+package Saransh.Rana;
+
+import java.util.Arrays;
 
 /**
  * Given array of positive integers find total number of matching pairs.
@@ -11,7 +13,21 @@ package com.kuebiko.it.second;
 public class FindMatchingPair {
 
   public int totalMatchingPair(int[] arr) {
-    return 0;
+
+    int Match = 0;
+
+    Arrays.sort(arr);
+    for(int i=0; i<arr.length; i++){
+      for(int j=0; j<arr.length; j++){
+        if(arr[i] == arr[j]){
+           Match++;
+        }
+      }
+
+
+    }
+
+    return Match;
   }
 
 }

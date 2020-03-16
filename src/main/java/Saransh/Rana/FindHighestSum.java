@@ -1,4 +1,8 @@
-package com.kuebiko.it.second;
+package Saransh.Rana;
+
+import java.util.Arrays;
+
+
 
 /**
  * Given array of positive integers "arr" and a number "num"
@@ -11,6 +15,15 @@ package com.kuebiko.it.second;
 public class FindHighestSum {
 
   public int findHighestSum(int[] arr, int num) {
+
+   /* int sum = 0;
+
+    Arrays.sort(arr);
+
+
+    for(int i =0; ){*/
+
+    //}
     return 0;
   }
 }

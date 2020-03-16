@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package Saransh.Rana;
 
 /**
  * Given two string arguments s1, s2
@@ -12,6 +12,15 @@ package com.kuebiko.it.second;
 public class StringRemoval {
 
   public String remove(String s1, String s2) {
-    return null;
+
+    String str = "";
+
+      if (s1.contains(s2)) {
+      }
+
+    else{
+     return "N/A";
+  }
+    return str;
   }
 }
