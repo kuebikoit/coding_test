@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package suvam;
 
 /**
  * Given a positive integer "num" and number "limit"
@@ -9,10 +9,27 @@ package com.kuebiko.it.second;
  *  num = 9, limit = 5 => 15120 (9*8*7*6*5)
  *  num = 21, limit = 4 => 143640 (9*8*7*6*5)
  */
+
 public class FindLimitFactorial {
 
-  public long findLimitFactorial(int num, int limit) {
-    return 0l;
-  }
+//  public long findLimitFactorial(int num, int limit) {
+//    return 0l;
+//  }
+
+    static int num =7;
+    static int limit = 3;
+
+    public static void main(String[] args) {
+
+        for (int i=1; i < limit; i++)
+        {
+           int temp = num * (num-i) ;
+        }
+        System.out.println(num);
+    }
+
+
+
+
 
 }

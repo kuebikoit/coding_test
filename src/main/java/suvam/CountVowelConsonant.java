@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package suvam;
 
 /**
  * Count the number of vowel and consonant in a given string of only alphabets
@@ -10,7 +10,44 @@ package com.kuebiko.it.second;
 public class CountVowelConsonant {
 
   public int[] countVowelConsonant(String input) {
-    return null;
+
+    int vCount = 0;
+    int cCount = 0;
+    char vowelCount[] = input.toCharArray();
+
+
+    for (int i = 0; i < vowelCount.length; i++) {
+      if ((vowelCount[i]) == 'a' || vowelCount[i] == 'e' || vowelCount[i] == 'i' || vowelCount[i] == 'o' || vowelCount[i] == 'u' ||
+              (vowelCount[i]) == 'A' || vowelCount[i] == 'E' || vowelCount[i] == 'I' || vowelCount[i] == 'O' || vowelCount[i] == 'U'
+      ) {
+        vCount++;
+      } else {
+        cCount++;
+      }
+
+    }
+
+    int index[] = {vCount, cCount};
+    return index;
+
   }
 
-}
+  }
+
+
+
+//  static int index[] = {2,3};
+//
+//  public static void main(String[] args) {
+//    char[] vowelCount = {'H', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd'};
+//
+//
+//    int[] ret = indexReturn(vowelCount);
+//    System.out.println(Arrays.toString(ret));
+//
+//
+//  }
+
+
+
+

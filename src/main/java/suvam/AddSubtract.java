@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package suvam;
 
 /**
  * Given array "arr" and string "str" that contains "A" for add and "S" for subtract
@@ -9,7 +9,16 @@ package com.kuebiko.it.second;
  */
 public class AddSubtract {
 
-  public int addSubtract(int[] arr, String str) {
-    return 0;
-  }
+    public int addSubtract(int[] arr, String str) {
+        int res = arr[0];
+        char[] ch = str.toCharArray();
+        for (int i = 0; i < ch.length; i++) {
+            if (ch[i] == 'A') {
+                res = res + arr[i + 1];
+            } else if (ch[i] == 'S') {
+                res = res - arr[i + 1];
+            }
+        }
+        return res;
+    }
 }

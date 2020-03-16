@@ -1,4 +1,5 @@
 package suvam;
+import java.util.Scanner;
 
 /**
  * Given two string arguments s1, s2
@@ -12,13 +13,23 @@ package suvam;
 
 public class StringRemoval {
 
-//  Scanner scanner = new Scanner(System.in);
-//
-//  System.out.println("Enter the string:");
-//  String strOne = scanner.nextLine();
-//
-//  System.out.println("Enter the string to be removed:");
-//  String strTwo = scanner.nextLine();
+
+  public String Inquiry() {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Enter the string:");
+    String strOne = scanner.nextLine();
+
+    System.out.println("Enter the string to be removed:");
+    String strTwo = scanner.nextLine();
+
+    String Final = remove(strOne, strTwo);
+    return Final;
+
+  }
+
+
+
 
   public String remove(String strOne, String strTwo) {
 
@@ -46,13 +57,14 @@ public class StringRemoval {
 
   public int indexReturn(String strOne, String strTwo)
   {
-      int index = 0;
 
-      for (int i = 0; i < strOne.length() - 1; i++) {
-        for (int j = 0; j < strTwo.length(); j++) {
+      int index =0;
+
+      loop1:for (int i = 0; i < strTwo.length(); i++) {
+        for (int j = 0; j < strOne.length(); j++) {
           if (Character.toUpperCase(strOne.charAt(j)) == Character.toUpperCase(strTwo.charAt(i))) {
-            index = i;
-            break;
+             index = j;
+             break loop1;
           }
         }
       }

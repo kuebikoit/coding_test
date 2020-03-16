@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package suvam;
 
 /**
  * Given array of positive integers find total number of matching pairs.
@@ -9,9 +9,32 @@ package com.kuebiko.it.second;
  * [1, 2, 3] => 0
  */
 public class FindMatchingPair {
+   int pair=0;
 
   public int totalMatchingPair(int[] arr) {
-    return 0;
+    for (int i=0; i < arr.length-1; i++){
+      for (int j =i+1; j < arr.length; j++){
+        if (arr[i] == arr[j]){
+          pair++;
+        }
+      }
+    }
+    return pair/2;
   }
 
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

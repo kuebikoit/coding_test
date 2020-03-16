@@ -1,7 +1,4 @@
-package com.kuebiko.it.second;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
+package suvam;
 
 /**
  * Given string "str" remove duplicate characters ignoring case
@@ -15,7 +12,31 @@ import java.util.Map;
  */
 public class RemoveDuplicateCharacters {
 
-  public static String remove(String str) {
-    return null;
+//  public static String remove(String str) {
+//    return null;
+//  }
+
+  public static void main(String[] args) {
+    String str = "abbccca";
+//    char temp[] = str.toCharArray();
+//    Arrays.sort(temp);
+
+for (int i = 0; i < str.length(); i++)
+{
+  for (int j =i+1; j<str.length(); j++)
+  {
+    if (str.charAt(i) == str.charAt(j))
+    {
+//      charRemove(str,j);
+    }
   }
 }
+
+
+  }
+
+
+
+}
+
+

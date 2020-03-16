@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package suvam;
 
 /**
  * Given a number, find if it's perfect square, if not perfect return -1
@@ -9,7 +9,9 @@ package com.kuebiko.it.second;
  */
 public class NextPerfectSquare {
 
-  public int getNextPerfectSquare(int num) {
-    return -1;
-  }
+//  public int getNextPerfectSquare(int num) {
+//    return -1;
+//  }
+
+
 }
