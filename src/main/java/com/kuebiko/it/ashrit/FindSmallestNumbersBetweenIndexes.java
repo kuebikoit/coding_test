@@ -14,11 +14,11 @@ import java.util.Arrays;
  */
 public class FindSmallestNumbersBetweenIndexes {
 
-  public int smallestNumberInBetween(int[] arr, int[] indexes) {
+    public int smallestNumberInBetween(int[] arr, int[] indexes) {
 
-    Arrays.sort(arr,indexes[0],indexes[1]);
-    int num = arr[indexes[0]];
-    return num;
-  }
+        Arrays.sort(arr, indexes[0], indexes[1]);
+        int num = arr[indexes[0]];
+        return num;
+    }
 
 }

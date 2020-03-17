@@ -11,8 +11,8 @@ public class CountVowelConsonantTest {
         String s = "HelloWorld";
         CountVowelConsonant ct = new CountVowelConsonant();
         int t[] = ct.countVowelConsonant(s);
-        int []a={3,7};
-        Assert.assertArrayEquals(t,a);
+        int[] a = {3, 7};
+        Assert.assertArrayEquals(t, a);
     }
 
     @Test
@@ -20,7 +20,7 @@ public class CountVowelConsonantTest {
         String s = "KuebikoIt";
         CountVowelConsonant ct = new CountVowelConsonant();
         int t[] = ct.countVowelConsonant(s);
-        int []a={5,4};
-        Assert.assertArrayEquals(t,a);
+        int[] a = {5, 4};
+        Assert.assertArrayEquals(t, a);
     }
 }

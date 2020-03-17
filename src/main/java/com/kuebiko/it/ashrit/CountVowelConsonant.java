@@ -9,20 +9,19 @@ package com.kuebiko.it.ashrit;
  */
 public class CountVowelConsonant {
 
-  public int[] countVowelConsonant(String input) {
-      String s = input.toLowerCase();
-      int count=0;
-      int conCount=0;
-    for (int i =0; i<s.length(); i++){
-        if (s.charAt(i) == 'a' || s.charAt(i) == 'e'|| s.charAt(i) == 'i'|| s.charAt(i) == 'o'|| s.charAt(i) == 'u') {
-            count++;
+    public int[] countVowelConsonant(String input) {
+        String s = input.toLowerCase();
+        int count = 0;
+        int conCount = 0;
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == 'a' || s.charAt(i) == 'e' || s.charAt(i) == 'i' || s.charAt(i) == 'o' || s.charAt(i) == 'u') {
+                count++;
+            } else
+                conCount++;
         }
-        else
-             conCount++;
-    }
-int []a={count,conCount};
-      return a;
+        int[] a = {count, conCount};
+        return a;
 
-  }
+    }
 
 }

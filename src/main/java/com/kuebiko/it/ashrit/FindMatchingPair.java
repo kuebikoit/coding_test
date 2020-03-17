@@ -15,35 +15,26 @@ import java.util.HashMap;
  */
 public class FindMatchingPair {
 
-  public int totalMatchingPair(int[] arr) {
-    int countElement=0, countPair=0,element=0;
-    if(arr.length>0)element=arr[0];
-   /* int pairCount = 0;
-    for (int i=0; i<arr.length-1; i++){
-      for(int j=i; j >=arr.length-1;j++)
-      if (arr[i] == arr[j]){
-        pairCount++;
-        break;
-      }
-    }*/
-    Arrays.sort(arr);
-
-   for(int i =0 ; i<arr.length;i++){
-     countElement=0;
-     for(int j=i;j<arr.length;j++){
-       if(arr[i]==arr[j]){
-         countElement++;
-         if(j==arr.length-1)
-           i=j;
-       }
-       else {
-         i=j-1;
-         break;
-       }
-     }
-     countPair+=countElement/2;
-   }
-return countPair;
-  }
+    public int totalMatchingPair(int[] arr) {
+        int countElement = 0, countPair = 0;
+        int arr2[] = Arrays.copyOf(arr, arr.length);
+        Arrays.sort(arr2);
+        //  Arrays.sort(arr);
+        for (int i = 0; i < arr2.length; i++) {
+            countElement = 0;
+            for (int j = i; j < arr2.length; j++) {
+                if (arr2[i] == arr2[j]) {
+                    countElement++;
+                    if (j == arr2.length - 1)
+                        i = j;
+                } else {
+                    i = j - 1;
+                    break;
+                }
+            }
+            countPair += countElement / 2;
+        }
+        return countPair;
+    }
 
 }

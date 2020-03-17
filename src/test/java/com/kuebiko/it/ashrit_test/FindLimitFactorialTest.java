@@ -12,9 +12,9 @@ public class FindLimitFactorialTest {
     @Test
     public void findLimitFactorial() {
         FindLimitFactorial f = new FindLimitFactorial();
-        long k =  f.findLimitFactorial(7,2);
+        long k = f.findLimitFactorial(7, 2);
 
-        Assert.assertEquals(42,k);
+        Assert.assertEquals(42, k);
 
 
     }
@@ -23,9 +23,9 @@ public class FindLimitFactorialTest {
     @Test
     public void findLimitFactorial1() {
         FindLimitFactorial f = new FindLimitFactorial();
-        long k =  f.findLimitFactorial(4,1);
+        long k = f.findLimitFactorial(4, 1);
 
-        Assert.assertEquals(4,k);
+        Assert.assertEquals(4, k);
 
 
     }
@@ -33,9 +33,9 @@ public class FindLimitFactorialTest {
     @Test
     public void findLimitFactorial2() {
         FindLimitFactorial f = new FindLimitFactorial();
-        long k =  f.findLimitFactorial(21,4);
+        long k = f.findLimitFactorial(21, 4);
 
-        Assert.assertEquals(143640,k);
+        Assert.assertEquals(143640, k);
 
 
     }

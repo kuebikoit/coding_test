@@ -16,21 +16,21 @@ public class StringRemovalTest {
     @Test
     public void remove() {
         StringRemoval stringRemoval = new StringRemoval();
-        String s=stringRemoval.remove("HelloWorld", "World");
-        Assert.assertEquals("Hello",s);
+        String s = stringRemoval.remove("HelloWorld", "World");
+        Assert.assertEquals("Hello", s);
     }
 
     @Test
     public void remove1() {
         StringRemoval stringRemoval = new StringRemoval();
-        String s=stringRemoval.remove("JustDoIt", "Do");
-        Assert.assertEquals("JustIt",s);
+        String s = stringRemoval.remove("JustDoIt", "Do");
+        Assert.assertEquals("JustIt", s);
     }
 
     @Test
     public void remove2() {
         StringRemoval stringRemoval = new StringRemoval();
-        String s=stringRemoval.remove("DoesntContain", "this");
-        Assert.assertEquals("N/A",s);
+        String s = stringRemoval.remove("DoesntContain", "this");
+        Assert.assertEquals("N/A", s);
     }
 }

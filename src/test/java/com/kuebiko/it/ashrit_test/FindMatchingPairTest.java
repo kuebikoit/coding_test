@@ -10,41 +10,41 @@ public class FindMatchingPairTest {
 
     @Test
     public void totalMatchingPair() {
-        int []arr= {10, 20, 10,10};
+        int[] arr = {10, 20, 10, 10};
         FindMatchingPair f = new FindMatchingPair();
-        int a =f.totalMatchingPair(arr);
+        int a = f.totalMatchingPair(arr);
 
-        Assert.assertEquals(1,a);
+        Assert.assertEquals(1, a);
 
     }
 
     @Test
     public void totalMatchingPair1() {
-        int []arr= {1,2,3,4,5,1,2,3,1,2,3,4,5};
+        int[] arr = {1, 2, 3, 4, 5, 1, 2, 3, 1, 2, 3, 4, 5};
         FindMatchingPair f = new FindMatchingPair();
-        int a =f.totalMatchingPair(arr);
+        int a = f.totalMatchingPair(arr);
 
-        Assert.assertEquals(5,a);
+        Assert.assertEquals(5, a);
 
     }
 
     @Test
     public void totalMatchingPair2() {
-        int []arr= {5,5,5,6};
+        int[] arr = {5, 5, 5, 6};
         FindMatchingPair f = new FindMatchingPair();
-        int a =f.totalMatchingPair(arr);
+        int a = f.totalMatchingPair(arr);
 
-        Assert.assertEquals(1,a);
+        Assert.assertEquals(1, a);
 
     }
 
     @Test
     public void totalMatchingPair3() {
-        int []arr= {3, 2, 3, 3, 2};
+        int[] arr = {3, 2, 3, 3, 2};
         FindMatchingPair f = new FindMatchingPair();
-        int a =f.totalMatchingPair(arr);
+        int a = f.totalMatchingPair(arr);
 
-        Assert.assertEquals(2,a);
+        Assert.assertEquals(2, a);
 
     }
 }

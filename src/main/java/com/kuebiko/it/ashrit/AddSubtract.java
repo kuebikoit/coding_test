@@ -1,7 +1,6 @@
 package com.kuebiko.it.ashrit;
 
 
-
 /**
  * Given array "arr" and string "str" that contains "A" for add and "S" for subtract
  * find the total after adding/subtracting "arr" in order of "A" and "S"
@@ -11,27 +10,25 @@ package com.kuebiko.it.ashrit;
  */
 public class AddSubtract {
 
-  public int addSubtract(int[] arr, String str) {
+    public int addSubtract(int[] arr, String str) {
 
-    int x=0;
-    int temp=0;
-    for(int i=0; i<str.length(); i++) {
-               // [5,4,2,1,3]
-      if (str.charAt(i) == 'A' && i!=0) {
-       temp+= arr[i + 1];
+        int x = 0;
+        int temp = 0;
+        for (int i = 0; i < str.length(); i++) {
+            // [5,4,2,1,3]
+            if (str.charAt(i) == 'A' && i != 0) {
+                temp += arr[i + 1];
 
-      } else if (str.charAt(i) == 'S' &&i!=0) {
-        temp -= arr[i + 1];
+            } else if (str.charAt(i) == 'S' && i != 0) {
+                temp -= arr[i + 1];
+            } else if (str.charAt(i) == 'S') {
+                temp = arr[0] - arr[1];
+            } else if (str.charAt(i) == 'A') {
+                temp = arr[0] + arr[1];
+            }
+            //  temp+=x;
+
         }
-      else if(str.charAt(i) == 'S'){
-        temp=arr[0]-arr[1];
-      }
-      else if(str.charAt(i) == 'A'){
-        temp=arr[0]+arr[1];
-      }
-    //  temp+=x;
-
+        return temp;
     }
-    return temp;
-  }
 }
