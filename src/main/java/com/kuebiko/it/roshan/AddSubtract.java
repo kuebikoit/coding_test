@@ -9,7 +9,40 @@ package com.kuebiko.it.roshan;
  */
 public class AddSubtract {
 
+
+
+
   public int addSubtract(int[] arr, String str) {
-    return 0;
+
+    int valueHolder=0;
+    int counterStr=0;
+    int arrSize=arr.length;
+    int strLength=str.length();
+
+            /* runs a loop in accordance to string size and array size */
+            for(int i = 0; (i < arrSize) && (counterStr < strLength); i++){
+                /* Need the first operation to be stored in valueHolder variable */
+                if(counterStr ==0){
+                        if(str.charAt(counterStr)=='A') {
+                          valueHolder = valueHolder + arr[i] + arr[i + 1];
+                        } else{
+                            valueHolder=valueHolder+arr[i]-arr[i+1];
+                        }
+                        counterStr++;
+                }
+                /* Store the rest of the operation in valueHolder variable */
+                else{
+
+                       if(str.charAt(counterStr)=='A'){
+                          valueHolder=valueHolder+arr[i+1];
+                      }
+                       else{
+                          valueHolder=valueHolder-arr[i+1];
+                      }
+                      counterStr++;
+                }
+            }
+
+    return valueHolder;
   }
 }
