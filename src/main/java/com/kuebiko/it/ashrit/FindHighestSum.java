@@ -16,12 +16,10 @@ public class FindHighestSum {
 
     public int findHighestSum(int[] arr, int num) {
         int i = arr.length;
-        int x = 1;
         int sum = 0;
         Arrays.sort(arr);
-        while (x <= num) {
+        for(int x=1;x<=num; x++){
             sum += arr[i - x];
-            x++;
         }
         return sum;
     }

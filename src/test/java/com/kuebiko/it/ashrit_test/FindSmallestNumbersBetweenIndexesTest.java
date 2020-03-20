@@ -7,14 +7,14 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FindSmallestNumbersBetweenIndexesTest {
+    FindSmallestNumbersBetweenIndexes findSmallestNumbersBetweenIndexes = new FindSmallestNumbersBetweenIndexes();
 
     @Test
     public void smallestNumberInBetween() {
         int num;
         int[] x = {1, 2, 4, 3, 7, 5};
         int[] y = {2, 4};
-        FindSmallestNumbersBetweenIndexes f = new FindSmallestNumbersBetweenIndexes();
-        num = f.smallestNumberInBetween(x, y);
+        num = findSmallestNumbersBetweenIndexes.smallestNumberInBetween(x, y);
         Assert.assertEquals(3, num);
     }
 
@@ -23,8 +23,7 @@ public class FindSmallestNumbersBetweenIndexesTest {
         int num;
         int[] x = {1, 3, 4, 3, 2, 5};
         int[] y = {0, 2};
-        FindSmallestNumbersBetweenIndexes f = new FindSmallestNumbersBetweenIndexes();
-        num = f.smallestNumberInBetween(x, y);
+        num = findSmallestNumbersBetweenIndexes.smallestNumberInBetween(x, y);
         Assert.assertEquals(1, num);
     }
 
@@ -33,8 +32,7 @@ public class FindSmallestNumbersBetweenIndexesTest {
         int num;
         int[] x = {7, 9, 10, 17, 2, 4};
         int[] y = {3, 5};
-        FindSmallestNumbersBetweenIndexes f = new FindSmallestNumbersBetweenIndexes();
-        num = f.smallestNumberInBetween(x, y);
+        num = findSmallestNumbersBetweenIndexes.smallestNumberInBetween(x, y);
         Assert.assertEquals(2, num);
     }
 }

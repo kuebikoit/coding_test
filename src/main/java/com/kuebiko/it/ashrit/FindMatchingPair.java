@@ -1,9 +1,7 @@
 package com.kuebiko.it.ashrit;
 
-import javax.swing.text.Utilities;
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
-import java.util.HashMap;
 
 /**
  * Given array of positive integers find total number of matching pairs.
@@ -19,7 +17,7 @@ public class FindMatchingPair {
         int countElement = 0, countPair = 0;
         int arr2[] = Arrays.copyOf(arr, arr.length);
         Arrays.sort(arr2);
-        //  Arrays.sort(arr);
+
         for (int i = 0; i < arr2.length; i++) {
             countElement = 0;
             for (int j = i; j < arr2.length; j++) {

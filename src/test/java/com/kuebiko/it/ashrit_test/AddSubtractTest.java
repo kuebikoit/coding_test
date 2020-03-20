@@ -5,16 +5,15 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
 public class AddSubtractTest {
+    AddSubtract addSubtract = new AddSubtract();
 
     @Test
     public void addSubtract_test() {
 
         int arr[] = {5, 4, 2, 1, 3};
         String s = "ASA";
-        AddSubtract a = new AddSubtract();
-        int k = a.addSubtract(arr, s);
+        int k = addSubtract.addSubtract(arr, s);
         Assert.assertEquals(8, k);
     }
 
@@ -23,8 +22,7 @@ public class AddSubtractTest {
 
         int arr[] = {11, 1, 3, 15, 21};
         String s = "AA";
-        AddSubtract a = new AddSubtract();
-        int k = a.addSubtract(arr, s);
+        int k = addSubtract.addSubtract(arr, s);
         Assert.assertEquals(15, k);
     }
 
@@ -33,8 +31,7 @@ public class AddSubtractTest {
 
         int arr[] = {10, 12, 113, 2, 15};
         String s = "AASA";
-        AddSubtract a = new AddSubtract();
-        int k = a.addSubtract(arr, s);
+        int k = addSubtract.addSubtract(arr, s);
         Assert.assertEquals(148, k);
     }
 }

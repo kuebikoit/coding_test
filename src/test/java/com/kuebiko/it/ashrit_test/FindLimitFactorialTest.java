@@ -8,35 +8,27 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FindLimitFactorialTest {
+    FindLimitFactorial findLimitFactorial = new FindLimitFactorial();
 
     @Test
     public void findLimitFactorial() {
-        FindLimitFactorial f = new FindLimitFactorial();
-        long k = f.findLimitFactorial(7, 2);
+        long k = findLimitFactorial.findLimitFactorial(7, 2);
 
         Assert.assertEquals(42, k);
-
-
     }
 
 
     @Test
     public void findLimitFactorial1() {
-        FindLimitFactorial f = new FindLimitFactorial();
-        long k = f.findLimitFactorial(4, 1);
+        long k = findLimitFactorial.findLimitFactorial(4, 1);
 
         Assert.assertEquals(4, k);
-
-
     }
 
     @Test
     public void findLimitFactorial2() {
-        FindLimitFactorial f = new FindLimitFactorial();
-        long k = f.findLimitFactorial(21, 4);
+        long k = findLimitFactorial.findLimitFactorial(21, 4);
 
         Assert.assertEquals(143640, k);
-
-
     }
 }

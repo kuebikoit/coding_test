@@ -16,9 +16,15 @@ public class FindSmallestNumbersBetweenIndexes {
 
     public int smallestNumberInBetween(int[] arr, int[] indexes) {
 
-        Arrays.sort(arr, indexes[0], indexes[1]);
-        int num = arr[indexes[0]];
-        return num;
+        int min = arr[indexes[0]];
+
+        for (int i = indexes[0]; i <= indexes[1]; i++) {
+
+            if (min>arr[i]) {
+                min = arr[i];
+            }
+        }
+        return min;
     }
 
 }

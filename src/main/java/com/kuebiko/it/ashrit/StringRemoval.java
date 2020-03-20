@@ -12,11 +12,10 @@ package com.kuebiko.it.ashrit;
 public class StringRemoval {
 
     public String remove(String s1, String s2) {
-        String s3;
-        if (s1.contains(s2)) {
-            s3 = s1.replace(s2, "");
-
-            return s3;
+        String s3,s4=s1.toLowerCase();
+        if (s4.contains(s2.toLowerCase())) {
+            s1 = s1.replaceAll("(?i)"+s2,"");
+            return s1;
         } else
             return "N/A";
     }

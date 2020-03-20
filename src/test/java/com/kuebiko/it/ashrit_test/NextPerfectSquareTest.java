@@ -12,17 +12,16 @@ import static org.junit.Assert.*;
  * @Author- Ashrit Koirala
  **/
 public class NextPerfectSquareTest {
+    NextPerfectSquare nextPerfectSquare = new NextPerfectSquare();
 
     @Test
     public void test1() {
-        NextPerfectSquare nextPerfectSquare = new NextPerfectSquare();
         int i = nextPerfectSquare.getNextPerfectSquare(16);
         Assert.assertEquals(25, i);
     }
 
     @Test
     public void test2() {
-        NextPerfectSquare nextPerfectSquare = new NextPerfectSquare();
         int i = nextPerfectSquare.getNextPerfectSquare(23);
         Assert.assertEquals(-1, i);
     }

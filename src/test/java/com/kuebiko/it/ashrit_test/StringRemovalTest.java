@@ -12,25 +12,26 @@ import static org.junit.Assert.*;
  * @Author- Ashrit Koirala
  **/
 public class StringRemovalTest {
+    StringRemoval stringRemoval = new StringRemoval();
 
     @Test
     public void remove() {
-        StringRemoval stringRemoval = new StringRemoval();
         String s = stringRemoval.remove("HelloWorld", "World");
+
         Assert.assertEquals("Hello", s);
     }
 
     @Test
     public void remove1() {
-        StringRemoval stringRemoval = new StringRemoval();
-        String s = stringRemoval.remove("JustDoIt", "Do");
+        String s = stringRemoval.remove("JustDoIt", "do");
+
         Assert.assertEquals("JustIt", s);
     }
 
     @Test
     public void remove2() {
-        StringRemoval stringRemoval = new StringRemoval();
         String s = stringRemoval.remove("DoesntContain", "this");
+
         Assert.assertEquals("N/A", s);
     }
 }

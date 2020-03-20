@@ -12,10 +12,10 @@ import static org.junit.Assert.*;
  * @Author- Ashrit Koirala
  **/
 public class StringReverseTest {
+    StringReverse stringReverse = new StringReverse();
 
     @Test
     public void reverse() {
-        StringReverse stringReverse = new StringReverse();
         String str = stringReverse.reverse("Ashrit");
 
         Assert.assertEquals("tirhsA", str);
@@ -23,9 +23,8 @@ public class StringReverseTest {
 
     @Test
     public void reverse1() {
-        StringReverse stringReverse = new StringReverse();
-        String str = stringReverse.reverse("kushal");
+        String str = stringReverse.reverse("kushaldai");
 
-        Assert.assertEquals("lahsuk", str);
+        Assert.assertEquals("iadlahsuk", str);
     }
 }
