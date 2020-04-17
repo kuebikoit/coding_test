@@ -21,7 +21,7 @@ public class Chicken implements Bird {
   static long initialize() {
     throw new NotYetImplementedException("get from src/main/resources/farm/bird.properties");
   }
-
+  //test
   @Override
   public Egg lay() {
     System.out.println(String.format("chicken(%s) laid an egg at %s", name, LocalDateTime.now()));
