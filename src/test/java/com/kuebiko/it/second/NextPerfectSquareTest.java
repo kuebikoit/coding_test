@@ -1,8 +1,10 @@
 package com.kuebiko.it.second;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
+@Ignore
 public class NextPerfectSquareTest {
 
   @Test

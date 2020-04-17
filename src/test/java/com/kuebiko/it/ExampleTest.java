@@ -3,6 +3,7 @@ package com.kuebiko.it;
 import org.junit.Assert;
 import org.junit.Test;
 
+
 public class ExampleTest {
 
     private Example systemUnderTest = new Example();
