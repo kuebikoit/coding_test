@@ -1,4 +1,4 @@
-package com.kuebiko.it.design.farm.exception;
+package com.kuebiko.it.design.bidurFarm.exception;
 
 public class NotYetImplementedException extends RuntimeException {
 

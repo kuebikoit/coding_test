@@ -1,5 +1,6 @@
 package com.kuebiko.it;
 
+import com.kuebiko.it.design.Example;
 import org.junit.Assert;
 import org.junit.Test;
 

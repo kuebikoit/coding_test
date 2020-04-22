@@ -1,6 +1,7 @@
-package com.kuebiko.it.design.farm;
+package com.kuebiko.it.design.bidurFarm;
 
-import com.kuebiko.it.design.farm.exception.NotYetImplementedException;
+import com.kuebiko.it.design.bidurFarm.exception.NotYetImplementedException;
+
 import java.util.concurrent.Callable;
 
 public final class Egg {

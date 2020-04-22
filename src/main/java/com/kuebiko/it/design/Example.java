@@ -1,4 +1,4 @@
-package com.kuebiko.it;
+package com.kuebiko.it.design;
 
 public class Example {
 
