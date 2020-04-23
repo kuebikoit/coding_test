@@ -1,5 +1,7 @@
 package com.kuebiko.it.design.bidurFarm;
 
+import java.util.concurrent.ExecutionException;
+
 public interface Bird {
-  Egg lay();
+  Egg lay() throws ExecutionException, InterruptedException;
 }

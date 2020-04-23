@@ -14,6 +14,11 @@ public final class Egg {
     throw new NotYetImplementedException("when timer expires isAlreadyHatched = true");
   }
 
+  public Egg(Bird bird) {
+    this.bird=bird;
+  }
+
+
   public Bird getBird() {
     return this.bird;
   }
