@@ -25,6 +25,7 @@ public class Chicken implements Bird {
         this.name = name;
     }
 
+
     @Override
     public String toString() {
         return "Chicken{" +
@@ -46,27 +47,26 @@ public class Chicken implements Bird {
         return incubationChicken;
     }
 
-    public Bird getHatchedBird(Future<Bird> birdFuture) throws ExecutionException, InterruptedException {
-        return birdFuture.get();
-    }
 
     //test
     @Override
     public Egg lay() throws ExecutionException, InterruptedException, IOException {
         System.out.println(String.format("chicken(%s) laid an egg at %s", name, LocalDateTime.now()));
         ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
-        Future<Bird> birdFuture = scheduler.schedule(() -> new Chicken(name), HATCHING_PERIOD_MINS, TimeUnit.SECONDS);
-        Egg egg = new Egg(() -> getHatchedBird(birdFuture));
-        writeInCsvFile(FilePath.CSV_FilePath, egg.getBird().toString(), LocalDateTime.now());
+        Future<Bird> birdFuture = scheduler.schedule(() -> this, HATCHING_PERIOD_MINS, TimeUnit.SECONDS);
+
+        Egg egg = new Egg(() -> birdFuture.get());
         eggs.add(egg);
+        writeInCsvFile(FilePath.CSV_FilePath, egg.getBird().toString(), LocalDateTime.now());
         System.out.println(String.format("total egg count is %s", eggs.size()));
         return egg;
     }
 
+
     public static void writeInCsvFile(String filePath, String birdType, LocalDateTime hatchedTime) throws IOException {
 
-        try (FileWriter outputfile = new FileWriter(filePath, true);
-             CSVWriter writer = new CSVWriter(outputfile)) {
+        try (FileWriter outputFile = new FileWriter(filePath, true);
+             CSVWriter writer = new CSVWriter(outputFile)) {
             String[] data = {birdType, hatchedTime.toString()};
             writer.writeNext(data);
         } catch (IOException e) {

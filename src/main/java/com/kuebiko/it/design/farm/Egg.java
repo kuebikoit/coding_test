@@ -10,6 +10,7 @@ public final class Egg {
 
   private boolean isAlreadyHatched;
 
+
   public Egg(Callable<Bird> birdCallable) throws ExecutionException, InterruptedException {
     this.isAlreadyHatched=true;
     ExecutorService executor =  Executors.newSingleThreadScheduledExecutor();
