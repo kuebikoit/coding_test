@@ -19,20 +19,44 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.opencsv</groupId>
+      <artifactId>opencsv</artifactId>
+      <version>5.1</version>
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
-
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.1</version>
+        <groupId>com.kuebiko.it</groupId>
+        <artifactId>coding_test</artifactId>
+        <version>1.0-SNAPSHOT</version>
       </plugin>
-    </plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.1.1</version>
+        <executions>
+          <execution>
+            <phase>test</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>com.kuebiko.it.design.farm.FarmRunner</mainClass>
+              <arguments>
+                <argument>arg0</argument>
+                <argument>arg1</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+         </plugins>
   </build>
 </project>
