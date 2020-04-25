@@ -11,6 +11,7 @@ public class Chicken implements Bird {
   private final String name;
 
   //private static final long HATCHING_PERIOD_MINS = initialize();
+  //private static final long HATCHING_PERIOD_MINS = incubation.period.minutes.chicken;
 
   private List<Egg> eggs = new ArrayList<>(100);
 
