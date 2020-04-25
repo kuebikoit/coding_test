@@ -37,34 +37,27 @@
         <groupId>com.kuebiko.it</groupId>
         <artifactId>coding_test</artifactId>
         <version>1.0-SNAPSHOT</version>
-
       </plugin>
-            <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>exec-maven-plugin</artifactId>
-              <executions>
-                <execution>
-                  <phase>test</phase>
-                  <goals>
-                    <goal>java</goal>
-                  </goals>
-                  <configuration>
-                    <mainClass>src.main.java.com.kuebiko.it.design.farm.FarmRunner.Main</mainClass>
-                  </configuration>
-                </execution>
-              </executions>
-<!--              <executions>-->
-<!--                <execution>-->
-<!--                  <phase>test</phase>-->
-<!--                  <goals>-->
-<!--                    <goal>java</goal>-->
-<!--                  </goals>-->
-<!--                  <configuration>-->
-<!--                    <mainClass>src.main.java.com.kuebiko.it.design.farm.FarmRunner</mainClass>-->
-<!--                  </configuration>-->
-<!--                </execution>-->
-<!--              </executions>-->
-            </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.1.1</version>
+        <executions>
+          <execution>
+            <phase>test</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>com.kuebiko.it.design.farm.FarmRunner</mainClass>
+              <arguments>
+                <argument>arg0</argument>
+                <argument>arg1</argument>
+              </arguments>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
          </plugins>
   </build>
 </project>
