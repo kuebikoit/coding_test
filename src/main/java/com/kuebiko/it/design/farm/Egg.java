@@ -1,19 +1,25 @@
 package com.kuebiko.it.design.farm;
 
-import com.kuebiko.it.design.farm.exception.NotYetImplementedException;
 import java.util.concurrent.Callable;
 
 public final class Egg {
 
-  private final Bird bird;
+  public boolean isAlreadyHatched;
+  private  Bird bird;
 
-  private boolean isAlreadyHatched;
 
   public Egg(Callable<Bird> birdCallable) {
-    throw new NotYetImplementedException("when timer expires isAlreadyHatched = true");
+    try {
+      this.bird = birdCallable.call();
+      isAlreadyHatched=true;
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
   }
 
   public Bird getBird() {
     return this.bird;
   }
+
+
 }

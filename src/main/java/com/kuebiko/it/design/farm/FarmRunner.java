@@ -14,6 +14,7 @@ public class FarmRunner {
 
     Bird myChicken = new Chicken("potent hen");
 
+
     scheduler.scheduleAtFixedRate(() -> simulate(myChicken), 2, 10, TimeUnit.SECONDS);
   }
 
