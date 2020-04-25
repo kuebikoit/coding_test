@@ -1,4 +1,4 @@
-package com.kuebiko.it.design.farm;
+package SecondTestSafal;
 
 import java.io.FileNotFoundException;
 import java.util.concurrent.ExecutorService;
@@ -16,10 +16,7 @@ public class FarmRunner {
     Bird myChicken = new Chicken("potent hen");
 
     scheduler.scheduleAtFixedRate(() -> simulate(myChicken), 2, 10, TimeUnit.SECONDS);
-
   }
-
-
 
   static void simulate(Bird bird) {
     executorService.submit(bird::lay);

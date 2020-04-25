@@ -1,10 +1,14 @@
 package com.kuebiko.it.design.farm;
 
 import com.kuebiko.it.design.farm.exception.NotYetImplementedException;
-import java.time.Instant;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 public class Chicken implements Bird {
 
@@ -14,11 +18,23 @@ public class Chicken implements Bird {
 
   private List<Egg> eggs = new ArrayList<>(100);
 
-  public Chicken(String name) {
+  public Chicken(String name) throws FileNotFoundException {
     this.name = name;
   }
 
-  static long initialize() {
+  static long initialize() throws Exception {
+
+
+    File confResource =null;
+    FileInputStream fis=null;
+
+      confResource = new File("bird.properties");
+      fis = new FileInputStream(confResource);
+      Properties prop = new Properties();
+      prop.load(fis);
+      String period = prop.getProperty("incubation.period.minutes.chicken");
+
+
     throw new NotYetImplementedException("get from src/main/resources/farm/bird.properties");
   }
 
