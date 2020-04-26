@@ -40,8 +40,8 @@ public class Chicken implements Bird {
     public Egg lay() throws ExecutionException, InterruptedException {
         System.out.println(String.format("chicken(%s) laid an egg at %s", name, LocalDateTime.now()));
         eggs.add(new Egg(this));
-        hatchingEggScheduler();
         System.out.println(String.format("total egg count is %s", eggs.size()));
+        hatchingEggScheduler();
         throw new NotYetImplementedException("add it to eggs after its laid");
     }
     public void hatchingEggScheduler(){
@@ -54,11 +54,9 @@ public class Chicken implements Bird {
 
     private void writeInCsv(String hatchedbird,String date) {
         try {
-            FileWriter fileWriter = new FileWriter("src/main/resources/farm/egg.csv",true);
-            CSVWriter csvWriter = new CSVWriter(fileWriter);
+            CSVWriter csvWriter = new CSVWriter(new FileWriter("src/main/resources/farm/egg.csv",true));
             String[] data = {hatchedbird,date};
             csvWriter.writeNext(data);
-            System.out.println("file written in CSV");
             csvWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -66,8 +64,6 @@ public class Chicken implements Bird {
     }
     @Override
     public String toString() {
-        return "Chicken{" +
-                "name='" + name + '\'' +
-                '}';
+        return  name;
     }
 }
