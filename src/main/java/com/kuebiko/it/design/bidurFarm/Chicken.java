@@ -1,6 +1,7 @@
 package com.kuebiko.it.design.bidurFarm;
 
 import com.kuebiko.it.design.bidurFarm.exception.NotYetImplementedException;
+import com.opencsv.CSVWriter;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -13,7 +14,7 @@ import java.util.concurrent.*;
 public class Chicken implements Bird {
 
     private final String name;
-    private static final long HATCHING_PERIOD_MINS = 25;  //initialize();
+    private static final long HATCHING_PERIOD_MINS = 13;  //initialize();
 
     /*static long initialize() {
         Properties prop = new Properties();
@@ -31,33 +32,34 @@ public class Chicken implements Bird {
     }*/
 
     private List<Egg> eggs = new ArrayList<>(100);
-    private List<Egg> hatchedEggs = new ArrayList<>(100);
-
     public Chicken(String name) {
         this.name = name;
     }
 
-
     @Override
     public Egg lay() throws ExecutionException, InterruptedException {
         System.out.println(String.format("chicken(%s) laid an egg at %s", name, LocalDateTime.now()));
-        eggs.add(new Egg(new Chicken(name)));
+        eggs.add(new Egg(this));
+        hatchingEggScheduler();
         System.out.println(String.format("total egg count is %s", eggs.size()));
-        Callable<Bird> birdCallable = () -> new Chicken(name);
-        ScheduledExecutorService executorService = Executors.newScheduledThreadPool(1);
-        Future<Bird> schedule = executorService.schedule(birdCallable, HATCHING_PERIOD_MINS, TimeUnit.SECONDS);
-        Egg hatchedegg = new Egg(() -> schedule.get());
-        String hatchedbird = hatchedegg.getBird().toString();
-        writeInCsv(hatchedbird);
-        hatchedEggs.add(hatchedegg);
-        System.out.println(String.format("Total hatched egg count is %s", hatchedEggs.size()) + " for Bird:");
-        System.out.println(hatchedbird);
         throw new NotYetImplementedException("add it to eggs after its laid");
     }
+    public void hatchingEggScheduler(){
+        Callable<Bird> birdCallable = () -> this;
+        ScheduledExecutorService executorService = Executors.newScheduledThreadPool(1);
+        Future<Bird> birdFuture = executorService.schedule(birdCallable, HATCHING_PERIOD_MINS, TimeUnit.SECONDS);
+        Egg hatchedEgg = new Egg(()->birdFuture.get());
+        writeInCsv(hatchedEgg.getBird().toString(),LocalDateTime.now().toString());
+    }
 
-    private void writeInCsv(String hatchedbird) {
+    private void writeInCsv(String hatchedbird,String date) {
         try {
-            FileWriter fileWriter = new FileWriter("src/main/resources/farm/egg.csv");
+            FileWriter fileWriter = new FileWriter("src/main/resources/farm/egg.csv",true);
+            CSVWriter csvWriter = new CSVWriter(fileWriter);
+            String[] data = {hatchedbird,date};
+            csvWriter.writeNext(data);
+            System.out.println("file written in CSV");
+            csvWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
