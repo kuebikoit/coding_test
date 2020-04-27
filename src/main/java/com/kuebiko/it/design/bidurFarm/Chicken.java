@@ -2,36 +2,27 @@ package com.kuebiko.it.design.bidurFarm;
 
 import com.kuebiko.it.design.bidurFarm.exception.NotYetImplementedException;
 import com.opencsv.CSVWriter;
-
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.*;
-//In chicken class load the value `HATCHING_PERIOD_MINS` = `incubation.period.minutes.chicken` from `src/main/resources/farm/bird.properties`
 
 public class Chicken implements Bird {
-
     private final String name;
-    private static final long HATCHING_PERIOD_MINS = 13;  //initialize();
-
-    /*static long initialize() {
+    private static final long HATCHING_PERIOD_MINS = initialize();
+    private List<Egg> eggs = new ArrayList<>(100);
+    static long initialize() {
         Properties prop = new Properties();
-        InputStream stream = Bird.class.getClassLoader().getResourceAsStream("bird.properties");
-        if (stream == null) {
-            System.out.println(" cannot find file!!");
-        }
-        try {
+        try(FileInputStream stream = new FileInputStream("src/main/resources/farm/bird.properties")) {
             prop.load(stream);
-        } catch (Exception e) {
-            throw new NotYetImplementedException("get from src/main/resources/bidurfarm/bird.properties");
+        }catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         String time = prop.getProperty("incubation.period.minutes.chicken");
         return Long.parseLong(time);
-    }*/
-
-    private List<Egg> eggs = new ArrayList<>(100);
+    }
     public Chicken(String name) {
         this.name = name;
     }

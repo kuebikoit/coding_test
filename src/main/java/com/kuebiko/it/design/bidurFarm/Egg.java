@@ -11,11 +11,6 @@ public final class Egg {
   private boolean isAlreadyHatched;
 
   public Egg(Callable<Bird> birdCallable) {
-    /*try {
-      this.bird= birdCallable.call();
-    } catch (Exception e) {
-      e.printStackTrace();
-    }*/
     ScheduledExecutorService executorService= Executors.newScheduledThreadPool(1);
     Future<Bird> future= executorService.submit(birdCallable);
     try {
@@ -25,14 +20,11 @@ public final class Egg {
     } catch (ExecutionException e) {
       e.printStackTrace();
     }
-   // throw new NotYetImplementedException("when timer expires isAlreadyHatched = true");
   }
 
   public Egg(Bird bird) {
     this.bird=bird;
   }
-
-
   public Bird getBird() {
     return this.bird;
   }
