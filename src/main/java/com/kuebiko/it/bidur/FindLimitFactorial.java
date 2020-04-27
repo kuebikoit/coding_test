@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package com.kuebiko.it.bidur;
 
 /**
  * Given a positive integer "num" and number "limit"
@@ -12,7 +12,11 @@ package com.kuebiko.it.second;
 public class FindLimitFactorial {
 
   public long findLimitFactorial(int num, int limit) {
-    return 0l;
+    long result= num;
+    for(int i=1; i<limit;i++){
+      result =result* (num-i);
+    }
+    return result;
   }
 
 }

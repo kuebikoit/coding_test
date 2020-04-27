@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package com.kuebiko.it.bidur;
 
 /**
  * Given two string arguments s1, s2
@@ -12,6 +12,13 @@ package com.kuebiko.it.second;
 public class StringRemoval {
 
   public String remove(String s1, String s2) {
-    return null;
+    String s1_copy = s1;
+    String s2_copy = s2;
+    String result=null;
+    if(s1_copy.toLowerCase().contains((s2_copy.toLowerCase()))){
+      result= s1_copy.replaceAll("(?i)"+s2_copy,"");
+      return result;
+    }
+    return "N/A";
   }
 }

@@ -1,4 +1,4 @@
-package com.kuebiko.it.second;
+package com.kuebiko.it.bidur;
 
 /**
  * Given two positive number arrays,
@@ -13,6 +13,15 @@ package com.kuebiko.it.second;
 public class FindSmallestNumbersBetweenIndexes {
 
   public int smallestNumberInBetween(int[] arr, int[] indexes) {
-    return 0;
+    int i = 0;
+    int smallest_num= arr[indexes[0]];
+    for (int j = indexes[0]; j <= indexes[1]; j++) {
+      if (arr[j] < smallest_num) {
+        smallest_num = arr[j];
+      }
+    }
+    return smallest_num;
   }
 }
+
+
