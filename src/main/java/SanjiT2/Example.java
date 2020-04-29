@@ -1,4 +1,4 @@
-package com.kuebiko.it;
+package SanjiT2;
 
 public class Example {
 

@@ -1,5 +1,6 @@
 package com.kuebiko.it;
 
+import SanjiT2.Example;
 import org.junit.Assert;
 import org.junit.Test;
 
