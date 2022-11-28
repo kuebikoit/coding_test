@@ -5,7 +5,6 @@ import com.opencsv.CSVWriter;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.*;
@@ -85,7 +84,9 @@ public class Chicken implements Bird {
     public void writeIntoCSV() {
         try (FileWriter fileWriter = new FileWriter("D:\\Projects\\coding_test\\src\\main\\resources\\farm\\egg.csv", true);
              CSVWriter writer = new CSVWriter(fileWriter)) {
-            String[] eggEntry = (String[]) eggs.toArray();
+
+            String[] eggEntry = Arrays.copyOf(eggs.toArray(), eggs.size(), String[].class);
+            // String[] eggEntry = (String[]) eggs.toArray();
             writer.writeNext(eggEntry);
 
         } catch (IOException e) {
