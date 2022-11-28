@@ -16,15 +16,15 @@ public class Chicken implements Bird {
 
     private final String name;
 
+    private static final String CHICKEN_HATCH_PERIOD = "incubation.period.seconds.chicken";
+
     private static final long HATCHING_PERIOD_MINS = initialize();
 
     private final List<Egg> eggs = new ArrayList<>(100);
 
-
     public Chicken(String name) {
         this.name = name;
     }
-
 
     static long initialize() {
 
@@ -41,7 +41,8 @@ public class Chicken implements Bird {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return Long.parseLong(property.getProperty("incubation.period.seconds.chicken"));
+
+        return Long.parseLong(property.getProperty(CHICKEN_HATCH_PERIOD));
         // new NotYetImplementedException("get from src/main/resources/farm/bird.properties");
     }
 
@@ -85,8 +86,8 @@ public class Chicken implements Bird {
         try (FileWriter fileWriter = new FileWriter("D:\\Projects\\coding_test\\src\\main\\resources\\farm\\egg.csv", true);
              CSVWriter writer = new CSVWriter(fileWriter)) {
 
-            String[] eggEntry = Arrays.copyOf(eggs.toArray(), eggs.size(), String[].class);
-            // String[] eggEntry = (String[]) eggs.toArray();
+            // String[] eggEntry = Arrays.copyOf(eggs.toArray(), eggs.size(), String[].class);
+            String[] eggEntry = eggs.stream().map(Egg::toString).toArray(String[]::new);
             writer.writeNext(eggEntry);
 
         } catch (IOException e) {
